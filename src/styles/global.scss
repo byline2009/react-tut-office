@@ -1,0 +1,23 @@
+@import "variables";
+@import "./components/header/header";
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Roboto";
+}
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  .content-page {
+    padding-top: 130px;
+  }
+}
