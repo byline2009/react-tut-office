@@ -12,14 +12,10 @@ class App extends Component {
         <BrowserRouter>
           <Routes>
             <Route element={<WrapperLayout />}>
-              <Route
-                path="/"
-                index
-                element={<Navigate element={<Navigate to="home" />} />}
-              ></Route>
-              <Route path="home" element={<Home></Home>}></Route>
-              <Route path="blog" element={<Blog></Blog>}></Route>
-              <Route path="author" element={<Author></Author>}></Route>
+              <Route path="/" index element={<Navigate to="/home" />}></Route>
+              <Route path="home" element={<Home />}></Route>
+              <Route path="blog" element={<Blog />}></Route>
+              <Route path="author" element={<Author />}></Route>
             </Route>
           </Routes>
         </BrowserRouter>

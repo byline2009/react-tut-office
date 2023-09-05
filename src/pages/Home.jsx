@@ -15,7 +15,7 @@ const Home = () => {
 
   return (
     <>
-      <div> Day la Home</div>;
+      <div> Day la Home</div>
       <div className="button">
         <button onClick={() => dispatch({ type: "countUp" })}>+1</button>
         <p>Count: {state.count}</p>

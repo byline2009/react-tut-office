@@ -12,15 +12,16 @@ const Header = () => {
       <p className="title">Header my lesson page</p>
       <div className="header-bottom">
         <div className="navigation">
-          {menuItems.map((item) => {
-            return (
-              <div className="nav-item" key={item.name}>
-                <Link>
-                  <a href={item.link}>{item.name} </a>
-                </Link>
-              </div>
-            );
-          })}
+          <div className="nav-item" key="home">
+            <Link to="home">
+              <span>Home</span>
+            </Link>
+          </div>
+          <div className="nav-item" key="blog">
+            <Link to="blog">
+              <span>Blog</span>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

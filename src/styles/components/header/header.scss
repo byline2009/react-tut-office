@@ -51,23 +51,15 @@
         &:hover {
           border-bottom-color: $primary-base;
           background-color: rgba(255, 255, 255, 0.25);
-          > a {
-            color: $primary-base;
-            text-decoration: none;
-          }
-          .drop-menu {
-            opacity: 1;
-            visibility: visible;
-          }
+          color: $primary-base;
+          text-decoration: none;
         }
         &.active {
-          > a {
-            color: $primary-base;
-            text-decoration: none;
-            font-weight: 600;
-            &::after {
-              opacity: 1;
-            }
+          color: $primary-base;
+          text-decoration: none;
+          font-weight: 600;
+          &::after {
+            opacity: 1;
           }
         }
       }
