@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Nav from "react-bootstrap/Nav";
 
 const menuItems = [
   { link: "home", name: "Home" },
   { link: "blog", name: "Blog" },
+  { link: "todos", name: "To do List" },
 ];
 
 const Header = () => {
@@ -11,18 +13,18 @@ const Header = () => {
     <div className="header">
       <p className="title">Header my lesson page</p>
       <div className="header-bottom">
-        <div className="navigation">
-          <div className="nav-item" key="home">
-            <Link to="home">
+        <Nav>
+          <Nav.Item>
+            <Link to="home" className="nav-link">
               <span>Home</span>
             </Link>
-          </div>
-          <div className="nav-item" key="blog">
-            <Link to="blog">
-              <span>Blog</span>
+          </Nav.Item>
+          <Nav.Item>
+            <Link to="todos" className="nav-link">
+              <span>Todo List</span>
             </Link>
-          </div>
-        </div>
+          </Nav.Item>
+        </Nav>
       </div>
     </div>
   );

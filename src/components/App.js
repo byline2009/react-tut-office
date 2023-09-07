@@ -5,6 +5,7 @@ import WrapperLayout from "../pages/WrapperLayout";
 import Home from "../pages/Home";
 import Blog from "../pages/Blog";
 import Author from "../pages/Author";
+import Todo from "../pages/Todos";
 class App extends Component {
   render() {
     return (
@@ -16,6 +17,7 @@ class App extends Component {
               <Route path="home" element={<Home />}></Route>
               <Route path="blog" element={<Blog />}></Route>
               <Route path="author" element={<Author />}></Route>
+              <Route path="todos" element={<Todo></Todo>}></Route>
             </Route>
           </Routes>
         </BrowserRouter>
