@@ -1,5 +1,7 @@
 @import "variables";
 @import "./components/header/header";
+@import "./components/header/header-info";
+@import "./components/header/edit-header-info";
 @import "./pages/todos";
 @import "~bootstrap/scss/bootstrap";
 

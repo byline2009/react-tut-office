@@ -9,6 +9,7 @@ import Todo from "../pages/Todos";
 import UserReducer from "../pages/UseReducer";
 import UseRef from "../pages/UseRef";
 import UseCallback from "../pages/UseCallback";
+import UseToolkit from "../pages/UseToolkit";
 class App extends Component {
   render() {
     return (
@@ -29,6 +30,10 @@ class App extends Component {
               <Route
                 path="useCallback"
                 element={<UseCallback></UseCallback>}
+              ></Route>
+              <Route
+                path="useToolkit"
+                element={<UseToolkit></UseToolkit>}
               ></Route>
             </Route>
           </Routes>

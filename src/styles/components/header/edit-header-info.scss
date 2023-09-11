@@ -1,0 +1,33 @@
+.edit-header-info {
+  background-color: white;
+  width: 400px;
+  .edit-container {
+    padding: 24px;
+    position: relative;
+    .btn-edit {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    input,
+    textarea,
+    label {
+      margin-top: 12px;
+    }
+    .label-theme {
+      margin-right: 12px;
+    }
+    .input-image-container {
+      display: grid;
+      grid-template-columns: 100px 100px;
+      grid-template-rows: 100px 100px;
+      .input-image {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        display: block;
+      }
+    }
+  }
+}

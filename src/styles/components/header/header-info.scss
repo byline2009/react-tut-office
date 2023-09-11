@@ -1,0 +1,32 @@
+.header-info {
+  background: #ff9051;
+  width: 400px;
+  max-width: 400px;
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    position: relative;
+    .btn-edit {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    .info-ava {
+      display: block;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .info-username {
+      margin-top: 24px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 24px;
+    }
+  }
+}
