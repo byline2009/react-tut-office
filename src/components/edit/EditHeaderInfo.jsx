@@ -19,18 +19,52 @@ const EditHeaderInfo = () => {
         <div className="edit-container">
           <Button className="btn-secondary btn-edit">Close</Button>
           <h4 className="edit-profile">Edit Profile</h4>
-          <input type="text" placeholder="username" value={username} />
-          <input type="text" placeholder="age" value={age} />
-          <textarea type="text" placeholder="about" value={about} />
+          <input
+            type="text"
+            placeholder="username"
+            value={username}
+            onChange={(e) => {
+              setUsername(e.target.value);
+            }}
+          />
+          <input
+            type="text"
+            placeholder="age"
+            value={age}
+            onChange={(e) => {
+              setAge(e.target.value);
+            }}
+          />
+          <textarea
+            type="text"
+            placeholder="about"
+            value={about}
+            onChange={(e) => {
+              setAbout(e.target.value);
+            }}
+          />
           <div htmlFor="">Profile Picture</div>
           <div className="input-image-container">
             {avaURLs.map((url) => (
-              <img src={url} alt="" className="input-image" />
+              <img
+                src={url}
+                alt=""
+                className="input-image"
+                onClick={(e) => {
+                  setUrl(e.target.src);
+                }}
+              />
             ))}
           </div>
           <div className="theme-container">
             <label className="label-theme">Theme: </label>
-            <input type="color" value={theme} />
+            <input
+              type="color"
+              value={theme}
+              onChange={(e) => {
+                setTheme(e.target.value);
+              }}
+            />
           </div>
         </div>
       </form>
