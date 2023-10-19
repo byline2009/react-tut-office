@@ -1,11 +1,14 @@
 import React from "react";
 import { Button } from "react-bootstrap";
+import { useSelector } from "react-redux";
 
 const HeaderInfo = (props) => {
   const { setEdit } = props;
   const handleEdit = () => {
     setEdit(true);
   };
+  const user = useSelector((state) => state.user);
+
   return (
     <div className="header-info">
       <div className="info-container">
@@ -17,9 +20,9 @@ const HeaderInfo = (props) => {
           alt=""
           className="info-ava"
         />
-        <div className="info-username">Duong Tran</div>
-        <div className="info-age">27</div>
-        <div className="info-about">im a software engineer</div>
+        <div className="info-username">{user.username}</div>
+        <div className="info-age">{user.age}</div>
+        <div className="info-about">{user.about}</div>
       </div>
     </div>
   );
